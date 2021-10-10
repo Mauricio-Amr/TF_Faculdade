@@ -1,6 +1,8 @@
 ''' -----------------------------------------------------------------
     UNIVERSIDADE PAULISTA - ENG COMPUTAÇÃO - BACELAR
     Nome: Mauricio Silva Amaral
+    RA : D92EJG-0
+    Turma : CP6P01
     Data: 09/10/2021
     Lista: 02 - 08
     Enunciado: 08 – Escreva um programa que leia um valor em metros e o exiba convertido em milímetros. 1 metro é igual

@@ -1,6 +1,8 @@
 ''' -----------------------------------------------------------------
     UNIVERSIDADE PAULISTA - ENG COMPUTAÇÃO - BACELAR
     Nome: Mauricio Silva Amaral
+    RA : D92EJG-0
+    Turma : CP6P01
     Data: 09/10/2021
     Lista: 01 - 05
     Enunciado: 05 – Escreva um programa que calcule a soma de três variáveis e imprima o resultado na tela.

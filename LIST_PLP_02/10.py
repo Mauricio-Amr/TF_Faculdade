@@ -1,6 +1,8 @@
 ''' -----------------------------------------------------------------
     UNIVERSIDADE PAULISTA - ENG COMPUTAÇÃO - BACELAR
     Nome: Mauricio Silva Amaral
+    RA : D92EJG-0
+    Turma : CP6P01
     Data: 09/10/2021
     Lista: 02 - 10
     Enunciado: 10 – Faça um programa que calcule o aumento de um salário. Ele deve solicitar o valor do salário e a
