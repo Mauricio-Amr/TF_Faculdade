@@ -14,6 +14,7 @@ velocidadeMedia = float(input("Digite a velocidade Media em Km/h : "))
 
 tempo = distanciaPercorrer / velocidadeMedia
 
+
 print(f'O tempo para percorrer {distanciaPercorrer} é de {tempo} horas')
 
 
