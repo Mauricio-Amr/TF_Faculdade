@@ -9,5 +9,11 @@
     e a velocidade média esperada para a viagem.
     ----------------------------------------------------------------- '''
 
+distanciaPercorrer = float(input("Digite a distancia a percorrer em Km: "))
+velocidadeMedia = float(input("Digite a velocidade Media em Km"))
+
+tempo = distanciaPercorrer / velocidadeMedia
+
+print(tempo)
 
 
