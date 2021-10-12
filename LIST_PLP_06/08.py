@@ -21,7 +21,7 @@ def pesquisarAluno ( dicionario, procurar):
             print(f'Aluno  : {key} \n'
                   f'Nota 1 : {valor[0]}\n'
                   f'Nota 2 : {valor[1]}\n'
-                  f'Media  :  {media}\n\n')
+                  f'Media  : {media}\n\n')
         else:
             print('aluno não cadastrado\n')
 
