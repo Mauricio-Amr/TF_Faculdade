@@ -12,7 +12,8 @@
     Escreva uma função que retorna a média do aluno, dado seu nome.
     ----------------------------------------------------------------- '''
 
-def pesquisarAluno ( dicionario, procurar):
+
+def pesquisarAluno(dicionario, procurar):
     for key, valor in dicionario.items():
         if procurar in key:
             notaM1 = int(valor[0])
@@ -26,35 +27,30 @@ def pesquisarAluno ( dicionario, procurar):
             print('aluno não cadastrado\n')
 
 
-
-
 notas = {}
 sair = ' '
 while True:
-    opcao  = input("Digite uma das opções \n"
-                   "1 - Cadastro de aluno / nota \n"
-                   "2 - Media do aluno \n"
-                   "S - Sair"
-                   "Opção : ")
+    opcao = input("Digite uma das opções \n"
+                  "1 - Cadastro de aluno / nota \n"
+                  "2 - Media do aluno \n"
+                  "S - Sair"
+                  "Opção : ")
 
-
-    if opcao == '1' :
-        print ('\nCadastro e aluno /nota')
+    if opcao == '1':
+        print('\nCadastro e aluno /nota')
         nome = input('Digite o nome do aluno :  ')
         nota_1 = input('Digite a primeira nota 1 : ')
         nota_2 = input('Digite a segunda nota 2 : ')
 
-        notas.update({nome: [nota_1, nota_2 ]})
+        notas.update({nome: [nota_1, nota_2]})
         print(f'lista cadastrada\n {notas}')
 
         sair = input('\nDeseja sair , precione "S". ').lower()
 
 
     elif opcao == '2':
-        procura = input('\nDigite o nome do aluno na lista : ' )
-        pesquisarAluno(notas,procura)
+        procura = input('\nDigite o nome do aluno na lista : ')
+        pesquisarAluno(notas, procura)
 
     elif sair == 's' or opcao == 's':
         break
-
-

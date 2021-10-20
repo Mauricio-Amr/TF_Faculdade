@@ -22,7 +22,7 @@ diasnoano = 365
 dia = 24*60
 
 
-#retorna o tempo fumando ate agorac
+#retorna o tempo fumando ate agora
 
 tempoFumado = quantidadesDeCigarros * cigarro
 converteAnoDia = quantidadeDeAnos * diasnoano

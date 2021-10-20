@@ -5,25 +5,26 @@
     Turma : CP6P01
     Data: 10/10/2021
     Lista: 03 - 10
-    Enunciado: 10 – Escreva um programa que calcule o preço a pagar pelo fornecimento de energia elétrica. Pergunte a
-    quantidade de kWh consumida e o tipo de instalação: R para residencial, I para industrial e C para comércios.
+    Enunciado: 10 – Escreva um programa que calcule o preço a
+    pagar pelo fornecimento de energia elétrica. Pergunte a
+    quantidade de kWh consumida e o tipo de instalação:
+    R para residencial, I para industrial e C para comércios.
     Calcule o preço a pagar de acordo com a tabela a seguir:
     • Residencial: Até 500 kWh – R$ 0,40 e acima de 500 kWh – R$ 0,65.
     • Comercial: Até 1000 kWh – R$ 0,55 e acima de 1000 kWh – R$ 0,60.
     • Industrial: Até 5000 kWh – R$ 0,55 e acima de 5000 kWh – R$ 0,60.
     ----------------------------------------------------------------- '''
 
-def resultado(tipoinstalacao,consumonormal,valorkWh ,valorconsumonormal,consumoEx,valorkwhex=0, valorconsumoex=0 ,valorpagar=0):
 
-
-    print('#'*50)
+def resultado(tipoinstalacao, consumonormal, valorkWh,
+              valorconsumonormal, consumoEx, valorkwhex=0, valorconsumoex=0, valorpagar=0):
+    print('#' * 50)
     print(f'Tipo de instalação  .......................... {tipoinstalacao}')
-    print(f'Consumo normal {consumonormal} * {valorkWh}  ..................... {valorconsumonormal:.2f}')
-    print(f'Consumo excendete {consumoEx} * {valorkwhex} ................... {valorconsumoex}')
-    print(f'Valor total .................................. {valorpagar:.2f}')
-    print('#'*50)
+    print(f'Consumo normal {consumonormal} * {valorkWh}  ...................R$ {valorconsumonormal:.2f}')
+    print(f'Consumo excendete {consumoEx} * {valorkwhex} ..............R$ {valorconsumoex}')
+    print(f'Valor total .................................R$ {valorpagar:.2f}')
+    print('#' * 50)
     print('\n')
-
 
 
 vlResidencia500 = 0.4
@@ -35,8 +36,7 @@ vlIndustrial5000ac = 0.60
 valorPagarExc = 0
 valorExcedente = 0
 
-
-while True :
+while True:
     print("R - Residencia\nI - Industrial\nC - Comercio\n")
     instalacao = input('Digite uma das opçoes acima : ').lower()
     qtDeWatts = float(input('Digite o  consumo em kWh : '))
@@ -49,8 +49,7 @@ while True :
                 consumoNormal = 500
 
             valorPagarTotalNormal = qtDeWatts * vlResidencia500
-            valorPagarTotal= valorPagarTotalNormal
-
+            valorPagarTotal = valorPagarTotalNormal
 
             resultado(instalacao,
                       consumoNormal,
@@ -71,12 +70,9 @@ while True :
 
             valorPagarTotalNormal = qtDeWatts * vlResidencia500
             valorExcedente = qtDeWatts - 500
-            valorPagar500 = 500*vlResidencia500
+            valorPagar500 = 500 * vlResidencia500
             valorPagarExc = valorExcedente * vlResidencia500ac
             valorPagarTotal = valorPagar500 + valorPagarExc
-
-
-
 
             resultado(instalacao,
                       consumoNormal,
@@ -181,7 +177,3 @@ while True :
     sair = input('Digite "S" para sair ou enter para continuar').lower()
     if sair == 's':
         break
-
-
-
-

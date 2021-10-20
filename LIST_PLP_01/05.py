@@ -5,8 +5,9 @@
     Turma : CP6P01
     Data: 09/10/2021
     Lista: 01 - 05
-    Enunciado: 05 – Escreva um programa que calcule a soma de três variáveis e imprima o resultado na tela.
-    ----------------------------------------------------------------- '''
+    Enunciado: 05 – Escreva um programa que calcule a soma de três
+    variáveis e imprima o resultado na tela.
+----------------------------------------------------------------- '''
 
 var1 = float(input("Entre com o primeiro valor : "))
 var2 = float(input("Entre com o segundo valor : "))
