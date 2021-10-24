@@ -8,12 +8,13 @@
     Enunciado: 05 – Defina uma função recursiva que calcule o
     maior divisor comum (M.D.C) entre dois números a e b, em
     que a > b.
-    𝑚𝑑𝑐(𝑎, 𝑏) = {𝑎
-    𝑚𝑑𝑐(𝑏, 𝑎 − 𝑏.[ 𝑎 𝑏])
-    𝑏 = 0
-    𝑎 > 𝑏
+    mdc(a,b) = {a
+    mdc(b, a - b*[ab]
+    b = 0
+    a > b
 
-    Em que 𝑎 − 𝑏.[𝑎 𝑏 ] pode ser escrito em Python como: a%b
+
+    Em que a-b*[ab] pode ser escrito em Python como: a%b
     ----------------------------------------------------------------- '''
 
 

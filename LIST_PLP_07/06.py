@@ -1,4 +1,4 @@
-''' -----------------------------------------------------------------
+""" -----------------------------------------------------------------
     UNIVERSIDADE PAULISTA - ENG COMPUTAÇÃO - BACELAR
     Nome: Mauricio Silva Amaral
     RA : D92EJG-0
@@ -9,24 +9,22 @@
     anterior, defina uma função para calcular o menor múltiplo
     comum (MMC) entre dois números.
 
-    𝑚𝑚𝑐(𝑎, 𝑏) = {
-    |𝑎. 𝑏|
-    𝑚𝑑𝑐(𝑎, 𝑏)
-    Em que |a.b| pode ser escrito em Python como; abs(a*b)
-    ----------------------------------------------------------------- '''
+    MMC(a,b) = { |a*b| / mdc(a,b)}
 
 
+    Em que |a *b|  pode ser escrito em Python como; abs(a*b)
+    ----------------------------------------------------------------- """
 
 
-def mmc (a, b ):
-
+def mmc(a, b):
     def mdc(a, b):
         if b == 0:
             return a
         else:
             return mdc(b, a % b)
 
-    valor = abs(a*b)/mdc(a,b)
+    valor = abs(a * b) / mdc(a, b)
     return valor
 
-print(mmc(16,40))
+
+print(mmc(16, 40))
